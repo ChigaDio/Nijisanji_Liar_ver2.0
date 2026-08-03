@@ -1,0 +1,3933 @@
+{
+  "columns": [
+    {
+      "description": "使用フラグ",
+      "name": "use",
+      "type": "bool"
+    },
+    {
+      "description": "名前",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "description": "ステータス",
+      "name": "characterStats",
+      "type": "CharacterStats"
+    },
+    {
+      "description": "キャラのイメージカラー",
+      "name": "image_color",
+      "options": {},
+      "type": "color"
+    },
+    {
+      "type": "GameObject_Character_Prefab",
+      "name": "prefab_id",
+      "description": "プレファブID",
+      "options": {}
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Kuzuha",
+      "description": "葛葉",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 3,
+            "charisma": 80,
+            "deception": 61,
+            "intuition": 11,
+            "reasoning": 56,
+            "stealth": 37
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 0.7176470588235294,
+            "g": 0.6549019607843137,
+            "r": 0.6745098039215687
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": "葛葉"
+        },
+        "use": {
+          "type": "bool",
+          "value": true
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.Kuzuha",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Ange",
+      "description": "アンジュ",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 44,
+            "charisma": 23,
+            "deception": 10,
+            "intuition": 89,
+            "reasoning": 70,
+            "stealth": 39
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 0.23137254901960785,
+            "g": 0.23529411764705882,
+            "r": 0.7843137254901961
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": "アンジュ"
+        },
+        "use": {
+          "type": "bool",
+          "value": true
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.Ange",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "Ryushen",
+      "description": "緑仙",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 50,
+            "charisma": 65,
+            "deception": 71,
+            "intuition": 36,
+            "reasoning": 90,
+            "stealth": 42
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 0.6705882352941176,
+            "g": 0.8,
+            "r": 0.36470588235294116
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": "緑仙"
+        },
+        "use": {
+          "type": "bool",
+          "value": true
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.Ryushen",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "Mashiro",
+      "description": "ましろ",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 16,
+            "charisma": 22,
+            "deception": 54,
+            "intuition": 48,
+            "reasoning": 36,
+            "stealth": 89
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 0.19607843137254902,
+            "g": 0.13333333333333333,
+            "r": 0.11764705882352941
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": "ましろ"
+        },
+        "use": {
+          "type": "bool",
+          "value": true
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.Mashiro",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "Himawari",
+      "description": "本間ひまわり",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 95,
+            "charisma": 66,
+            "deception": 30,
+            "intuition": 5,
+            "reasoning": 14,
+            "stealth": 6
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 0.25098039215686274,
+            "g": 0.8901960784313725,
+            "r": 0.984313725490196
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": "本間ひまわり"
+        },
+        "use": {
+          "type": "bool",
+          "value": true
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.Himawari",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "Belmond",
+      "description": "ベルモンド",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 45,
+            "charisma": 71,
+            "deception": 88,
+            "intuition": 31,
+            "reasoning": 69,
+            "stealth": 10
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 0.27450980392156865,
+            "g": 0.23921568627450981,
+            "r": 0.40784313725490196
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": "ベルモンド"
+        },
+        "use": {
+          "type": "bool",
+          "value": true
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.Belmond",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "GuestCharacter_06",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "enum_property": "GuestCharacter_07",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "enum_property": "GuestCharacter_08",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "enum_property": "GuestCharacter_09",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "enum_property": "GuestCharacter_10",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "enum_property": "GuestCharacter_11",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "enum_property": "GuestCharacter_12",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "enum_property": "GuestCharacter_13",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "enum_property": "GuestCharacter_14",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "enum_property": "GuestCharacter_15",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "enum_property": "GuestCharacter_16",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "enum_property": "GuestCharacter_17",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "enum_property": "GuestCharacter_18",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "enum_property": "GuestCharacter_19",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "enum_property": "GuestCharacter_20",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "enum_property": "GuestCharacter_21",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "enum_property": "GuestCharacter_22",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "enum_property": "GuestCharacter_23",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "enum_property": "GuestCharacter_24",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "enum_property": "GuestCharacter_25",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "enum_property": "GuestCharacter_26",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "enum_property": "GuestCharacter_27",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "enum_property": "GuestCharacter_28",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "enum_property": "GuestCharacter_29",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 31,
+      "enum_property": "GuestCharacter_30",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 32,
+      "enum_property": "GuestCharacter_31",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 33,
+      "enum_property": "GuestCharacter_32",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 34,
+      "enum_property": "GuestCharacter_33",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 35,
+      "enum_property": "GuestCharacter_34",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 36,
+      "enum_property": "GuestCharacter_35",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 37,
+      "enum_property": "GuestCharacter_36",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 38,
+      "enum_property": "GuestCharacter_37",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 39,
+      "enum_property": "GuestCharacter_38",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 40,
+      "enum_property": "GuestCharacter_39",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 41,
+      "enum_property": "GuestCharacter_40",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 42,
+      "enum_property": "GuestCharacter_41",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 43,
+      "enum_property": "GuestCharacter_42",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 44,
+      "enum_property": "GuestCharacter_43",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 45,
+      "enum_property": "GuestCharacter_44",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 46,
+      "enum_property": "GuestCharacter_45",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 47,
+      "enum_property": "GuestCharacter_46",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 48,
+      "enum_property": "GuestCharacter_47",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "enum_property": "GuestCharacter_48",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 50,
+      "enum_property": "GuestCharacter_49",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 51,
+      "enum_property": "GuestCharacter_50",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 52,
+      "enum_property": "GuestCharacter_51",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 53,
+      "enum_property": "GuestCharacter_52",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 54,
+      "enum_property": "GuestCharacter_53",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 55,
+      "enum_property": "GuestCharacter_54",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 56,
+      "enum_property": "GuestCharacter_55",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 57,
+      "enum_property": "GuestCharacter_56",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 58,
+      "enum_property": "GuestCharacter_57",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 59,
+      "enum_property": "GuestCharacter_58",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 60,
+      "enum_property": "GuestCharacter_59",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 61,
+      "enum_property": "GuestCharacter_60",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 62,
+      "enum_property": "GuestCharacter_61",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 63,
+      "enum_property": "GuestCharacter_62",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 64,
+      "enum_property": "GuestCharacter_63",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 65,
+      "enum_property": "GuestCharacter_64",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 66,
+      "enum_property": "GuestCharacter_65",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 67,
+      "enum_property": "GuestCharacter_66",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 68,
+      "enum_property": "GuestCharacter_67",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 69,
+      "enum_property": "GuestCharacter_68",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 70,
+      "enum_property": "GuestCharacter_69",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 71,
+      "enum_property": "GuestCharacter_70",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "enum_property": "GuestCharacter_71",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 73,
+      "enum_property": "GuestCharacter_72",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 74,
+      "enum_property": "GuestCharacter_73",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 75,
+      "enum_property": "GuestCharacter_74",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 76,
+      "enum_property": "GuestCharacter_75",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 77,
+      "enum_property": "GuestCharacter_76",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 78,
+      "enum_property": "GuestCharacter_77",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 79,
+      "enum_property": "GuestCharacter_78",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 80,
+      "enum_property": "GuestCharacter_79",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 81,
+      "enum_property": "GuestCharacter_80",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 82,
+      "enum_property": "GuestCharacter_81",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 83,
+      "enum_property": "GuestCharacter_82",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 84,
+      "enum_property": "GuestCharacter_83",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 85,
+      "enum_property": "GuestCharacter_84",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 86,
+      "enum_property": "GuestCharacter_85",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 87,
+      "enum_property": "GuestCharacter_86",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 88,
+      "enum_property": "GuestCharacter_87",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 89,
+      "enum_property": "GuestCharacter_88",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 90,
+      "enum_property": "GuestCharacter_89",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 91,
+      "enum_property": "GuestCharacter_90",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 92,
+      "enum_property": "GuestCharacter_91",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 93,
+      "enum_property": "GuestCharacter_92",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 94,
+      "enum_property": "GuestCharacter_93",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 95,
+      "enum_property": "GuestCharacter_94",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 96,
+      "enum_property": "GuestCharacter_95",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 97,
+      "enum_property": "GuestCharacter_96",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 98,
+      "enum_property": "GuestCharacter_97",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "enum_property": "GuestCharacter_98",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    },
+    {
+      "id": 100,
+      "enum_property": "GuestCharacter_99",
+      "description": "",
+      "data": {
+        "characterStats": {
+          "type": "CharacterStats",
+          "value": {
+            "appeal": 0,
+            "charisma": 0,
+            "deception": 0,
+            "intuition": 0,
+            "reasoning": 0,
+            "stealth": 0
+          }
+        },
+        "image_color": {
+          "type": "color",
+          "value": {
+            "a": 1,
+            "b": 1,
+            "g": 1,
+            "r": 1
+          }
+        },
+        "name": {
+          "type": "string",
+          "value": ""
+        },
+        "use": {
+          "type": "bool",
+          "value": false
+        },
+        "prefab_id": {
+          "value": "GameObject_Character_PrefabID.None",
+          "type": "GameObject_Character_Prefab"
+        }
+      }
+    }
+  ]
+}

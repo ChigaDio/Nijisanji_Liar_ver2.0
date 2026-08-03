@@ -1,0 +1,609 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "Loading",
+      "description": "ロード",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 2,
+      "fromState": "FadeOut",
+      "description": "フェードアウト（画面を黒からゲーム画面に）",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 3,
+      "fromState": "StartAnim",
+      "description": "スタートアニメーション",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 4,
+      "fromState": "SelectChoice",
+      "description": "選択（はじめから、つづきから、おわり）",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 5,
+      "fromState": "InitialStart",
+      "description": "はじめから",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 6,
+      "fromState": "LoadGame",
+      "description": "続きから",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 7,
+      "fromState": "ExitGame",
+      "description": "ゲーム終了",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 8,
+      "fromState": "FadeIn",
+      "description": "画面切り替え",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "data": {
+        "description": "ロード",
+        "label": "Loading",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "2"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": true
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "1",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": -345,
+        "y": 285
+      },
+      "selected": true,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "フェードアウト（画面を黒からゲーム画面に）",
+        "label": "FadeOut",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "3"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": false,
+            "async": true
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "2",
+      "measured": {
+        "height": 154,
+        "width": 150
+      },
+      "position": {
+        "x": -15,
+        "y": 270
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "スタートアニメーション",
+        "label": "StartAnim",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "4"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "3",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 315,
+        "y": 285
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "選択（はじめから、つづきから、おわり）",
+        "label": "SelectChoice",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "5",
+          "6",
+          "7"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "4",
+      "measured": {
+        "height": 154,
+        "width": 150
+      },
+      "position": {
+        "x": 675,
+        "y": 285
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "はじめから",
+        "label": "InitialStart",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "8",
+          "4"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "5",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 1140,
+        "y": 165
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "続きから",
+        "label": "LoadGame",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "8",
+          "4"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "6",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 1140,
+        "y": 345
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "ゲーム終了",
+        "label": "ExitGame",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [
+          "8",
+          "4"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "7",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 1140,
+        "y": 525
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "画面切り替え",
+        "label": "FadeIn",
+        "stateName": "Title",
+        "subNodes": [],
+        "targets": [],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "8",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 1515,
+        "y": 360
+      },
+      "selected": false,
+      "type": "default"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "1",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e2",
+      "source": "2",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e3",
+      "source": "3",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e4",
+      "source": "4",
+      "target": "5",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e5",
+      "source": "4",
+      "target": "6",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e6",
+      "source": "4",
+      "target": "7",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e7",
+      "source": "5",
+      "target": "8",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e8",
+      "source": "6",
+      "target": "8",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e9",
+      "source": "7",
+      "target": "8",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e10",
+      "source": "7",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e11",
+      "source": "6",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e12",
+      "source": "5",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    }
+  ]
+}

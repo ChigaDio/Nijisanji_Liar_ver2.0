@@ -1,0 +1,720 @@
+{
+  "columns": [
+    {
+      "type": "string",
+      "name": "name",
+      "description": "名前",
+      "options": {}
+    },
+    {
+      "type": "bool",
+      "name": "use",
+      "description": "使用フラグ",
+      "options": {}
+    },
+    {
+      "type": "dictionary",
+      "name": "place_map",
+      "description": "プレスデータ（辞書）",
+      "options": {
+        "keyType": "SeatPlace",
+        "valueType": "PlaceData",
+        "valueArraySize": 0,
+        "valueOptions": {}
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "PlaceMap_CafeMap",
+      "description": "カフェ",
+      "data": {
+        "name": {
+          "value": "カフェ",
+          "type": "string"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": [
+              {
+                "key": "SeatPlaceID.Place_01",
+                "value": {
+                  "position": [
+                    -2.96,
+                    0,
+                    -0.77
+                  ]
+                }
+              },
+              {
+                "key": "SeatPlaceID.Place_02",
+                "value": {
+                  "position": [
+                    1.202,
+                    0,
+                    -1.63
+                  ]
+                }
+              },
+              {
+                "key": "SeatPlaceID.Place_03",
+                "value": {
+                  "position": [
+                    0,
+                    0,
+                    0
+                  ]
+                }
+              },
+              {
+                "key": "SeatPlaceID.Place_04",
+                "value": {
+                  "position": [
+                    2.68,
+                    0,
+                    -4.42
+                  ]
+                }
+              },
+              {
+                "key": "SeatPlaceID.Place_05",
+                "value": {
+                  "position": [
+                    -4.011,
+                    0,
+                    -5.465
+                  ]
+                }
+              },
+              {
+                "key": "SeatPlaceID.Place_06",
+                "value": {
+                  "position": [
+                    1.13,
+                    0,
+                    2.76
+                  ]
+                }
+              }
+            ]
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "PlaceMap_01",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "PlaceMap_02",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "PlaceMap_03",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "PlaceMap_04",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "PlaceMap_05",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "PlaceMap_06",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "enum_property": "PlaceMap_07",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "enum_property": "PlaceMap_08",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "enum_property": "PlaceMap_09",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "enum_property": "PlaceMap_10",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "enum_property": "PlaceMap_11",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "enum_property": "PlaceMap_12",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "enum_property": "PlaceMap_13",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "enum_property": "PlaceMap_14",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "enum_property": "PlaceMap_15",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "enum_property": "PlaceMap_16",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "enum_property": "PlaceMap_17",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "enum_property": "PlaceMap_18",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "enum_property": "PlaceMap_19",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "enum_property": "PlaceMap_20",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "enum_property": "PlaceMap_21",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "enum_property": "PlaceMap_22",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 24,
+      "enum_property": "PlaceMap_23",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "enum_property": "PlaceMap_24",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 26,
+      "enum_property": "PlaceMap_25",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 27,
+      "enum_property": "PlaceMap_26",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 28,
+      "enum_property": "PlaceMap_27",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 29,
+      "enum_property": "PlaceMap_28",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    },
+    {
+      "id": 30,
+      "enum_property": "PlaceMap_29",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        },
+        "place_map": {
+          "value": {
+            "entries": []
+          },
+          "type": "dictionary"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+    "groups": {
+        "Main": {
+            "items": [
+                {
+                    "class_name": "Character",
+                    "desc": "キャラクター",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Material\\Character\\SH_Character.shadergraph",
+                    "addressable_path": "Assets/ProjectGame/MyAssets/Material/Character/SH_Character.shadergraph",
+                    "properties": [
+                        {
+                            "name": "_Texture2D",
+                            "type": "Texture"
+                        },
+                        {
+                            "name": "_Color",
+                            "type": "Color"
+                        },
+                        {
+                            "name": "_Switch",
+                            "type": "Float"
+                        }
+                    ],
+                    "subgroup": "GameModel"
+                }
+            ],
+            "subgroups": [
+                "GameModel"
+            ]
+        },
+        "NoAddressable": {
+            "items": [
+                {
+                    "class_name": "CircleAlphaMask",
+                    "desc": "円形のマスク",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Material\\UI\\CircleAlphaMask.shader",
+                    "addressable_path": "Assets/ProjectGame/MyAssets/Material/UI/CircleAlphaMask.shader",
+                    "properties": [
+                        {
+                            "name": "_Color",
+                            "type": "Color"
+                        },
+                        {
+                            "name": "_Center",
+                            "type": "Vector"
+                        },
+                        {
+                            "name": "_Radius",
+                            "type": "Float"
+                        },
+                        {
+                            "name": "_Strength",
+                            "type": "Float"
+                        }
+                    ],
+                    "subgroup": "UI"
+                }
+            ],
+            "subgroups": [
+                "UI"
+            ]
+        }
+    }
+}

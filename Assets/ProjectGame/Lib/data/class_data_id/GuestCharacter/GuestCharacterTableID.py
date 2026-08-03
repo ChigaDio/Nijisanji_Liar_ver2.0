@@ -1,0 +1,159 @@
+from enum import IntEnum
+from typing import Callable, List, Any
+
+
+class GuestCharacterTableID(IntEnum):
+    NONE = 0  # デフォルト値（C#のNoneに相当）
+    Kuzuha = 1  # 葛葉
+    Ange = 2  # アンジュ
+    Ryushen = 3  # 緑仙
+    Mashiro = 4  # ましろ
+    Himawari = 5  # 本間ひまわり
+    Belmond = 6  # ベルモンド
+    GuestCharacter_06 = 7  # 
+    GuestCharacter_07 = 8  # 
+    GuestCharacter_08 = 9  # 
+    GuestCharacter_09 = 10  # 
+    GuestCharacter_10 = 11  # 
+    GuestCharacter_11 = 12  # 
+    GuestCharacter_12 = 13  # 
+    GuestCharacter_13 = 14  # 
+    GuestCharacter_14 = 15  # 
+    GuestCharacter_15 = 16  # 
+    GuestCharacter_16 = 17  # 
+    GuestCharacter_17 = 18  # 
+    GuestCharacter_18 = 19  # 
+    GuestCharacter_19 = 20  # 
+    GuestCharacter_20 = 21  # 
+    GuestCharacter_21 = 22  # 
+    GuestCharacter_22 = 23  # 
+    GuestCharacter_23 = 24  # 
+    GuestCharacter_24 = 25  # 
+    GuestCharacter_25 = 26  # 
+    GuestCharacter_26 = 27  # 
+    GuestCharacter_27 = 28  # 
+    GuestCharacter_28 = 29  # 
+    GuestCharacter_29 = 30  # 
+    GuestCharacter_30 = 31  # 
+    GuestCharacter_31 = 32  # 
+    GuestCharacter_32 = 33  # 
+    GuestCharacter_33 = 34  # 
+    GuestCharacter_34 = 35  # 
+    GuestCharacter_35 = 36  # 
+    GuestCharacter_36 = 37  # 
+    GuestCharacter_37 = 38  # 
+    GuestCharacter_38 = 39  # 
+    GuestCharacter_39 = 40  # 
+    GuestCharacter_40 = 41  # 
+    GuestCharacter_41 = 42  # 
+    GuestCharacter_42 = 43  # 
+    GuestCharacter_43 = 44  # 
+    GuestCharacter_44 = 45  # 
+    GuestCharacter_45 = 46  # 
+    GuestCharacter_46 = 47  # 
+    GuestCharacter_47 = 48  # 
+    GuestCharacter_48 = 49  # 
+    GuestCharacter_49 = 50  # 
+    GuestCharacter_50 = 51  # 
+    GuestCharacter_51 = 52  # 
+    GuestCharacter_52 = 53  # 
+    GuestCharacter_53 = 54  # 
+    GuestCharacter_54 = 55  # 
+    GuestCharacter_55 = 56  # 
+    GuestCharacter_56 = 57  # 
+    GuestCharacter_57 = 58  # 
+    GuestCharacter_58 = 59  # 
+    GuestCharacter_59 = 60  # 
+    GuestCharacter_60 = 61  # 
+    GuestCharacter_61 = 62  # 
+    GuestCharacter_62 = 63  # 
+    GuestCharacter_63 = 64  # 
+    GuestCharacter_64 = 65  # 
+    GuestCharacter_65 = 66  # 
+    GuestCharacter_66 = 67  # 
+    GuestCharacter_67 = 68  # 
+    GuestCharacter_68 = 69  # 
+    GuestCharacter_69 = 70  # 
+    GuestCharacter_70 = 71  # 
+    GuestCharacter_71 = 72  # 
+    GuestCharacter_72 = 73  # 
+    GuestCharacter_73 = 74  # 
+    GuestCharacter_74 = 75  # 
+    GuestCharacter_75 = 76  # 
+    GuestCharacter_76 = 77  # 
+    GuestCharacter_77 = 78  # 
+    GuestCharacter_78 = 79  # 
+    GuestCharacter_79 = 80  # 
+    GuestCharacter_80 = 81  # 
+    GuestCharacter_81 = 82  # 
+    GuestCharacter_82 = 83  # 
+    GuestCharacter_83 = 84  # 
+    GuestCharacter_84 = 85  # 
+    GuestCharacter_85 = 86  # 
+    GuestCharacter_86 = 87  # 
+    GuestCharacter_87 = 88  # 
+    GuestCharacter_88 = 89  # 
+    GuestCharacter_89 = 90  # 
+    GuestCharacter_90 = 91  # 
+    GuestCharacter_91 = 92  # 
+    GuestCharacter_92 = 93  # 
+    GuestCharacter_93 = 94  # 
+    GuestCharacter_94 = 95  # 
+    GuestCharacter_95 = 96  # 
+    GuestCharacter_96 = 97  # 
+    GuestCharacter_97 = 98  # 
+    GuestCharacter_98 = 99  # 
+    GuestCharacter_99 = 100  # 
+    MAX = 101
+
+def to_int(id: "GuestCharacterTableID") -> int:
+    return int(id)
+
+
+def to_GuestCharacterTableID(id: int) -> "GuestCharacterTableID":
+    return GuestCharacterTableID(id)
+
+
+def to_index(id: "GuestCharacterTableID") -> int:
+    return int(id) - 1
+
+
+def for_id(action: Callable[["GuestCharacterTableID"], None]):
+    if action is None:
+        raise ValueError("action cannot be None")
+    start = GuestCharacterTableID.Kuzuha.value
+    for i in range(start, GuestCharacterTableID.MAX.value):
+        try:
+            value = GuestCharacterTableID(i)
+            action(value)
+        except ValueError:
+            continue  # 未定義の値はスキップ
+
+
+def find_all(predicate: Callable[["GuestCharacterTableID"], bool]) -> List["GuestCharacterTableID"]:
+    if predicate is None:
+        raise ValueError("predicate cannot be None")
+    results: List["GuestCharacterTableID"] = []
+    start = GuestCharacterTableID.Kuzuha.value
+    for i in range(start, GuestCharacterTableID.MAX.value):
+        try:
+            value = GuestCharacterTableID(i)
+            if predicate(value):
+                results.append(value)
+        except ValueError:
+            continue
+    return results
+
+
+def find(predicate: Callable[["GuestCharacterTableID"], bool]) -> "GuestCharacterTableID":
+    if predicate is None:
+        raise ValueError("predicate cannot be None")
+    start = GuestCharacterTableID.Kuzuha.value
+    for i in range(start, GuestCharacterTableID.MAX.value):
+        try:
+            value = GuestCharacterTableID(i)
+            if predicate(value):
+                return value
+        except ValueError:
+            continue
+    return GuestCharacterTableID.NONE

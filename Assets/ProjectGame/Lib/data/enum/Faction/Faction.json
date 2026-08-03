@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "property": "Human",
+    "value": 1,
+    "description": "人類"
+  },
+  {
+    "id": 2,
+    "property": "Werewolf",
+    "value": 2,
+    "description": "人狼"
+  }
+]

@@ -1,0 +1,436 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "FixSettingRule",
+      "description": "ルールやゲームの初期設定",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "CheckMorning",
+      "description": "朝チェック",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "Meeting",
+      "description": "会議",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "NightWalk",
+      "description": "夜散歩",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "CheckMeeting",
+      "description": "会議の結果チェック",
+      "variables": []
+    },
+    {
+      "id": 7,
+      "fromState": "CheckNightWalk",
+      "description": "夜散歩チェック",
+      "variables": []
+    },
+    {
+      "id": 8,
+      "fromState": "NightAction",
+      "description": "夜の就寝前に行動(特殊役職や人狼など)",
+      "variables": []
+    },
+    {
+      "id": 9,
+      "fromState": "CheckNightAction",
+      "description": "夜アクションのチェック",
+      "variables": []
+    },
+    {
+      "id": 10,
+      "fromState": "Exit",
+      "description": "終了",
+      "variables": []
+    },
+    {
+      "id": 11,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": 30,
+        "y": 210
+      },
+      "data": {
+        "label": "FixSettingRule",
+        "targets": [
+          "2",
+          "3",
+          "4"
+        ],
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "FadeOut"
+          }
+        ],
+        "description": "ルールやゲームの初期設定",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 160
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 420,
+        "y": 480
+      },
+      "data": {
+        "label": "CheckMorning",
+        "targets": [
+          "3",
+          "9"
+        ],
+        "subNodes": [],
+        "description": "朝チェック",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 780,
+        "y": -75
+      },
+      "data": {
+        "label": "Meeting",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "会議",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 1470,
+        "y": 0
+      },
+      "data": {
+        "label": "NightWalk",
+        "targets": [
+          "6"
+        ],
+        "subNodes": [],
+        "description": "夜散歩",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "default",
+      "position": {
+        "x": 1140,
+        "y": 225
+      },
+      "data": {
+        "label": "CheckMeeting",
+        "targets": [
+          "4",
+          "9"
+        ],
+        "subNodes": [],
+        "description": "会議の結果チェック",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "default",
+      "position": {
+        "x": 1830,
+        "y": 225
+      },
+      "data": {
+        "label": "CheckNightWalk",
+        "targets": [
+          "7"
+        ],
+        "subNodes": [],
+        "description": "夜散歩チェック",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "7",
+      "type": "default",
+      "position": {
+        "x": 2175,
+        "y": 210
+      },
+      "data": {
+        "label": "NightAction",
+        "targets": [
+          "8"
+        ],
+        "subNodes": [],
+        "description": "夜の就寝前に行動(特殊役職や人狼など)",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "8",
+      "type": "default",
+      "position": {
+        "x": 2520,
+        "y": 210
+      },
+      "data": {
+        "label": "CheckNightAction",
+        "targets": [
+          "9"
+        ],
+        "subNodes": [],
+        "description": "夜アクションのチェック",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "9",
+      "type": "default",
+      "position": {
+        "x": 3000,
+        "y": 510
+      },
+      "data": {
+        "label": "Exit",
+        "targets": [],
+        "subNodes": [
+          {
+            "id": 1,
+            "label": "FadeIn"
+          }
+        ],
+        "description": "終了",
+        "stateName": "PlayGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 160
+      },
+      "selected": false,
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "3",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "5",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "4",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "4",
+      "target": "6",
+      "id": "e5"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "6",
+      "target": "7",
+      "id": "e6"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "7",
+      "target": "8",
+      "id": "e7"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "8",
+      "target": "9",
+      "id": "e8"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "9",
+      "id": "e9"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "9",
+      "id": "e10"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "3",
+      "id": "e11"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "4",
+      "id": "e12"
+    }
+  ]
+}

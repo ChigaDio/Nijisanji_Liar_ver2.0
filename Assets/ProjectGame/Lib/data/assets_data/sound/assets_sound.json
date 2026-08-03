@@ -1,0 +1,45 @@
+{
+    "groups": {
+        "UI": {
+            "items": [
+                {
+                    "name": "SelectMove",
+                    "desc": "移動音",
+                    "path": "Assets/ProjectGame/MyAssets/Sound/UI/select_move.mp3",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Sound\\UI\\select_move.mp3",
+                    "volume": 1,
+                    "type": "SE",
+                    "subgroup": "Title"
+                },
+                {
+                    "name": "PushEnter",
+                    "desc": "決定音",
+                    "path": "Assets/ProjectGame/MyAssets/Sound/UI/push_enter.mp3",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Sound\\UI\\push_enter.mp3",
+                    "volume": 1,
+                    "type": "SE",
+                    "subgroup": "Title"
+                }
+            ],
+            "subgroups": [
+                "Title"
+            ]
+        },
+        "Title": {
+            "items": [
+                {
+                    "name": "Main_BGM",
+                    "desc": "タイトルのBGM",
+                    "path": "Assets/ProjectGame/MyAssets/Sound/Title/title.mp3",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Sound\\Title\\title.mp3",
+                    "volume": 1,
+                    "type": "BGM",
+                    "subgroup": "Main"
+                }
+            ],
+            "subgroups": [
+                "Main"
+            ]
+        }
+    }
+}

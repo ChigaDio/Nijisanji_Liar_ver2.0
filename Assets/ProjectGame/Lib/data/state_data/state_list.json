@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "MainLoop"
+  },
+  {
+    "id": 2,
+    "name": "Title"
+  },
+  {
+    "id": 3,
+    "name": "PlayGame"
+  },
+  {
+    "id": 4,
+    "name": "MeetingGame"
+  }
+]

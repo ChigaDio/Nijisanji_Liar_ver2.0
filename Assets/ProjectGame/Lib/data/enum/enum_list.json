@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Sound",
+    "view": false
+  },
+  {
+    "id": 2,
+    "name": "Texture",
+    "view": false
+  },
+  {
+    "id": 3,
+    "name": "GameObject",
+    "view": false
+  },
+  {
+    "id": 4,
+    "name": "Faction"
+  },
+  {
+    "id": 5,
+    "name": "Material",
+    "view": false
+  },
+  {
+    "id": 6,
+    "name": "SeatPlace"
+  },
+  {
+    "id": 7,
+    "name": "Sound_UI",
+    "view": false
+  },
+  {
+    "id": 8,
+    "name": "Sound_UI_Title",
+    "view": false
+  },
+  {
+    "id": 9,
+    "name": "Sound_Title",
+    "view": false
+  },
+  {
+    "id": 10,
+    "name": "GameObject_Character",
+    "view": false
+  },
+  {
+    "id": 11,
+    "name": "GameObject_Character_Prefab",
+    "view": false
+  },
+  {
+    "id": 12,
+    "name": "Sound_Title_Main",
+    "view": false
+  },
+  {
+    "id": 13,
+    "name": "Material_Main",
+    "view": false
+  },
+  {
+    "id": 14,
+    "name": "Material_NoAddressable",
+    "view": false
+  },
+  {
+    "id": 15,
+    "name": "GameScene"
+  }
+]

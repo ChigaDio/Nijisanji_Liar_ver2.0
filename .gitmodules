@@ -1,0 +1,3 @@
+[submodule "Assets/ProjectGame/Lib/SupportChigadio"]
+	path = Assets/ProjectGame/Lib/SupportChigadio
+	url = https://github.com/ChigaDio/SupportChigadio.git

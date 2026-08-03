@@ -1,0 +1,38 @@
+[
+    {
+        "description": "アンジュ",
+        "id": 1,
+        "property": "Character_Ange",
+        "value": 1
+    },
+    {
+        "description": "緑仙",
+        "id": 2,
+        "property": "Character_Ryushen",
+        "value": 2
+    },
+    {
+        "description": "ベルモンド",
+        "id": 3,
+        "property": "Character_Belmond",
+        "value": 3
+    },
+    {
+        "description": "本間ひわまり",
+        "id": 4,
+        "property": "Character_Himawari",
+        "value": 4
+    },
+    {
+        "description": "ましろ",
+        "id": 5,
+        "property": "Character_Mashiro",
+        "value": 5
+    },
+    {
+        "description": "葛葉",
+        "id": 6,
+        "property": "Character_Kuzuha",
+        "value": 6
+    }
+]

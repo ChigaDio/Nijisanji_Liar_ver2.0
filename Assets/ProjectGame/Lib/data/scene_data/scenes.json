@@ -1,0 +1,10 @@
+{
+    "scenes": [
+        {
+            "enum": "MorningRoom",
+            "sceneName": "MorningRoom",
+            "path": "D:/DoujinGameUnity/Nijisanji_Liar_Ver2.0/Assets/ProjectGame/MyAssets/Scene/Map/MorningRoom.unity",
+            "type": "Client"
+        }
+    ]
+}

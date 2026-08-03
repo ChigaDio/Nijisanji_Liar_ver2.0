@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "CharacterStats"
+  },
+  {
+    "id": 2,
+    "name": "CharacterImpression"
+  },
+  {
+    "id": 3,
+    "name": "Agent"
+  },
+  {
+    "id": 4,
+    "name": "PlaceData"
+  }
+]

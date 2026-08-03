@@ -1,0 +1,14 @@
+[
+    {
+        "description": "移動音",
+        "id": 1,
+        "property": "SelectMove",
+        "value": 1
+    },
+    {
+        "description": "決定音",
+        "id": 2,
+        "property": "PushEnter",
+        "value": 2
+    }
+]

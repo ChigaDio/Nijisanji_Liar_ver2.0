@@ -1,0 +1,230 @@
+{
+  "columns": [
+    {
+      "type": "string",
+      "name": "name",
+      "description": "役職名"
+    },
+    {
+      "type": "Faction",
+      "name": "faction_id",
+      "description": "所属ID"
+    },
+    {
+      "type": "bool",
+      "name": "use",
+      "description": "使用フラグ"
+    }
+  ],
+  "rows": [
+    {
+      "id": 1,
+      "enum_property": "Villager",
+      "description": "村人",
+      "data": {
+        "name": {
+          "value": "村人",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.Human",
+          "type": "Faction"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "enum_property": "Werewolf",
+      "description": "人狼",
+      "data": {
+        "name": {
+          "value": "人狼",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.Werewolf",
+          "type": "Faction"
+        },
+        "use": {
+          "value": true,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "enum_property": "RoleType_02",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "enum_property": "RoleType_03",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "enum_property": "RoleType_04",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "enum_property": "RoleType_05",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "enum_property": "RoleType_06",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "enum_property": "RoleType_07",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "enum_property": "RoleType_08",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "enum_property": "RoleType_09",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "enum_property": "RoleType_10",
+      "description": "",
+      "data": {
+        "name": {
+          "value": "",
+          "type": "string"
+        },
+        "faction_id": {
+          "value": "FactionID.None",
+          "type": "Faction"
+        },
+        "use": {
+          "value": false,
+          "type": "bool"
+        }
+      }
+    }
+  ]
+}

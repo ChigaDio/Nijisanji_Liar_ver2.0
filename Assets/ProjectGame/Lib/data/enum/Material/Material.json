@@ -1,0 +1,14 @@
+[
+    {
+        "description": "キャラクター",
+        "id": 1,
+        "property": "Main_Character",
+        "value": 1
+    },
+    {
+        "description": "円形のマスク",
+        "id": 2,
+        "property": "NoAddressable_CircleAlphaMask",
+        "value": 2
+    }
+]

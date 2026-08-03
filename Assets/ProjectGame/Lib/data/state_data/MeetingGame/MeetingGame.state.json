@@ -1,0 +1,1020 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "LoadingSetting",
+      "description": "セット初期化",
+      "variables": []
+    },
+    {
+      "id": 2,
+      "fromState": "FadeOut",
+      "description": "フェードアウト",
+      "variables": []
+    },
+    {
+      "id": 3,
+      "fromState": "FadeIn",
+      "description": "フェードイン",
+      "variables": []
+    },
+    {
+      "id": 4,
+      "fromState": "StartAnimation",
+      "description": "開始アニメーション",
+      "variables": []
+    },
+    {
+      "id": 5,
+      "fromState": "MorningWalk",
+      "description": "朝散歩（会議室で話しかける）",
+      "variables": []
+    },
+    {
+      "id": 6,
+      "fromState": "SelectChoice",
+      "description": "自分から喋るか、誰かがしゃべるか",
+      "variables": []
+    },
+    {
+      "id": 7,
+      "fromState": "PlayerSelect",
+      "description": "プレイヤー選択時",
+      "variables": []
+    },
+    {
+      "id": 8,
+      "fromState": "NpcThinktalk",
+      "description": "NPCが発言するとき、誰が発言し、どんな事をいうか",
+      "variables": []
+    },
+    {
+      "id": 9,
+      "fromState": "PlayerToNpcThink",
+      "description": "プレイヤーの選択にNpcが考える",
+      "variables": []
+    },
+    {
+      "id": 10,
+      "fromState": "NpnReaction",
+      "description": "NPCのリアクション",
+      "variables": []
+    },
+    {
+      "id": 11,
+      "fromState": "PlayerToNpcReaction",
+      "description": "NPCがプレイヤーの選択にリアクション",
+      "variables": []
+    },
+    {
+      "id": 12,
+      "fromState": "CheckTalkCount",
+      "description": "回数のチェック",
+      "variables": []
+    },
+    {
+      "id": 13,
+      "fromState": "VoteStartAnimation",
+      "description": "投票開始アニメーション",
+      "variables": []
+    },
+    {
+      "id": 14,
+      "fromState": "VoteSelect",
+      "description": "誰を投票するか",
+      "variables": []
+    },
+    {
+      "id": 15,
+      "fromState": "VoteFinishAnimation",
+      "description": "投票結果アニメーション",
+      "variables": []
+    },
+    {
+      "id": 16,
+      "fromState": "VoteCheck",
+      "description": "投票チェック",
+      "variables": []
+    },
+    {
+      "id": 17,
+      "fromState": "VoteReaction",
+      "description": "投票のリアクション",
+      "variables": []
+    },
+    {
+      "id": 18,
+      "fromState": "Unload",
+      "description": "解放",
+      "variables": []
+    },
+    {
+      "id": 19,
+      "fromState": "Exit",
+      "description": "終了",
+      "variables": []
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "id": "1",
+      "type": "default",
+      "position": {
+        "x": -135,
+        "y": 315
+      },
+      "data": {
+        "label": "LoadingSetting",
+        "targets": [
+          "2"
+        ],
+        "subNodes": [],
+        "description": "セット初期化",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "2",
+      "type": "default",
+      "position": {
+        "x": 180,
+        "y": 315
+      },
+      "data": {
+        "label": "FadeOut",
+        "targets": [
+          "4"
+        ],
+        "subNodes": [],
+        "description": "フェードアウト",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "3",
+      "type": "default",
+      "position": {
+        "x": 855,
+        "y": 330
+      },
+      "data": {
+        "label": "StartAnimation",
+        "targets": [
+          "5"
+        ],
+        "subNodes": [],
+        "description": "開始アニメーション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "4",
+      "type": "default",
+      "position": {
+        "x": 525,
+        "y": 315
+      },
+      "data": {
+        "label": "MorningWalk",
+        "targets": [
+          "3"
+        ],
+        "subNodes": [],
+        "description": "朝散歩（会議室で話しかける）",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "5",
+      "type": "default",
+      "position": {
+        "x": 1185,
+        "y": 330
+      },
+      "data": {
+        "label": "SelectChoice",
+        "targets": [
+          "6",
+          "7"
+        ],
+        "subNodes": [],
+        "description": "自分から喋るか、誰かがしゃべるか",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "6",
+      "type": "default",
+      "position": {
+        "x": 1560,
+        "y": 240
+      },
+      "data": {
+        "label": "PlayerSelect",
+        "targets": [
+          "8"
+        ],
+        "subNodes": [],
+        "description": "プレイヤー選択時",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "7",
+      "type": "default",
+      "position": {
+        "x": 1560,
+        "y": 390
+      },
+      "data": {
+        "label": "NpcThinktalk",
+        "targets": [
+          "9"
+        ],
+        "subNodes": [],
+        "description": "NPCが発言するとき、誰が発言し、どんな事をいうか",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "8",
+      "type": "default",
+      "position": {
+        "x": 1905,
+        "y": 240
+      },
+      "data": {
+        "label": "PlayerToNpcThink",
+        "targets": [
+          "10"
+        ],
+        "subNodes": [],
+        "description": "プレイヤーの選択にNpcが考える",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "9",
+      "type": "default",
+      "position": {
+        "x": 1905,
+        "y": 405
+      },
+      "data": {
+        "label": "NpnReaction",
+        "targets": [
+          "11"
+        ],
+        "subNodes": [],
+        "description": "NPCのリアクション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "10",
+      "type": "default",
+      "position": {
+        "x": 2235,
+        "y": 240
+      },
+      "data": {
+        "label": "PlayerToNpcReaction",
+        "targets": [
+          "11"
+        ],
+        "subNodes": [],
+        "description": "NPCがプレイヤーの選択にリアクション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "11",
+      "type": "default",
+      "position": {
+        "x": 2655,
+        "y": 345
+      },
+      "data": {
+        "label": "CheckTalkCount",
+        "targets": [
+          "5",
+          "12"
+        ],
+        "subNodes": [],
+        "description": "回数のチェック",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "12",
+      "type": "default",
+      "position": {
+        "x": 3030,
+        "y": 315
+      },
+      "data": {
+        "label": "VoteStartAnimation",
+        "targets": [
+          "13"
+        ],
+        "subNodes": [],
+        "description": "投票開始アニメーション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "13",
+      "type": "default",
+      "position": {
+        "x": 3375,
+        "y": 330
+      },
+      "data": {
+        "label": "VoteSelect",
+        "targets": [
+          "14"
+        ],
+        "subNodes": [],
+        "description": "誰を投票するか",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "14",
+      "type": "default",
+      "position": {
+        "x": 3705,
+        "y": 330
+      },
+      "data": {
+        "label": "VoteFinishAnimation",
+        "targets": [
+          "15"
+        ],
+        "subNodes": [],
+        "description": "投票結果アニメーション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "15",
+      "type": "default",
+      "position": {
+        "x": 4035,
+        "y": 330
+      },
+      "data": {
+        "label": "VoteCheck",
+        "targets": [
+          "16",
+          "25"
+        ],
+        "subNodes": [],
+        "description": "投票チェック",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "16",
+      "type": "default",
+      "position": {
+        "x": 4410,
+        "y": 240
+      },
+      "data": {
+        "label": "CheckTalkCount",
+        "targets": [
+          "17"
+        ],
+        "subNodes": [],
+        "description": "回数のチェック",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "17",
+      "type": "default",
+      "position": {
+        "x": 4740,
+        "y": 105
+      },
+      "data": {
+        "label": "SelectChoice",
+        "targets": [
+          "18",
+          "19"
+        ],
+        "subNodes": [],
+        "description": "自分から喋るか、誰かがしゃべるか",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "18",
+      "type": "default",
+      "position": {
+        "x": 5160,
+        "y": -60
+      },
+      "data": {
+        "label": "PlayerSelect",
+        "targets": [
+          "20"
+        ],
+        "subNodes": [],
+        "description": "プレイヤー選択時",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "19",
+      "type": "default",
+      "position": {
+        "x": 5160,
+        "y": 90
+      },
+      "data": {
+        "label": "NpcThinktalk",
+        "targets": [
+          "21"
+        ],
+        "subNodes": [],
+        "description": "NPCが発言するとき、誰が発言し、どんな事をいうか",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "20",
+      "type": "default",
+      "position": {
+        "x": 5505,
+        "y": -60
+      },
+      "data": {
+        "label": "PlayerToNpcThink",
+        "targets": [
+          "22"
+        ],
+        "subNodes": [],
+        "description": "プレイヤーの選択にNpcが考える",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "21",
+      "type": "default",
+      "position": {
+        "x": 5505,
+        "y": 105
+      },
+      "data": {
+        "label": "NpnReaction",
+        "targets": [],
+        "subNodes": [],
+        "description": "NPCのリアクション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "22",
+      "type": "default",
+      "position": {
+        "x": 5850,
+        "y": -60
+      },
+      "data": {
+        "label": "PlayerToNpcReaction",
+        "targets": [
+          "12"
+        ],
+        "subNodes": [],
+        "description": "NPCがプレイヤーの選択にリアクション",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 130
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "23",
+      "type": "default",
+      "position": {
+        "x": 4740,
+        "y": 495
+      },
+      "data": {
+        "label": "Unload",
+        "targets": [
+          "24"
+        ],
+        "subNodes": [],
+        "description": "解放",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "24",
+      "type": "default",
+      "position": {
+        "x": 5130,
+        "y": 495
+      },
+      "data": {
+        "label": "Exit",
+        "targets": [],
+        "subNodes": [],
+        "description": "終了",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": true,
+      "dragging": false
+    },
+    {
+      "id": "25",
+      "type": "default",
+      "position": {
+        "x": 4365,
+        "y": 510
+      },
+      "data": {
+        "label": "FadeIn",
+        "targets": [
+          "23"
+        ],
+        "subNodes": [],
+        "description": "フェードイン",
+        "stateName": "MeetingGame"
+      },
+      "draggable": true,
+      "measured": {
+        "width": 150,
+        "height": 110
+      },
+      "selected": false
+    }
+  ],
+  "edges": [
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "1",
+      "target": "2",
+      "id": "e1"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "2",
+      "target": "4",
+      "id": "e2"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "4",
+      "target": "3",
+      "id": "e3"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "3",
+      "target": "5",
+      "id": "e4"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "6",
+      "id": "e5"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "5",
+      "target": "7",
+      "id": "e6"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "6",
+      "target": "8",
+      "id": "e7"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "7",
+      "target": "9",
+      "id": "e8"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "8",
+      "target": "10",
+      "id": "e9"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "10",
+      "target": "11",
+      "id": "e10"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "9",
+      "target": "11",
+      "id": "e11"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "11",
+      "target": "5",
+      "id": "e12"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "11",
+      "target": "12",
+      "id": "e13"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "12",
+      "target": "13",
+      "id": "e14"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "13",
+      "target": "14",
+      "id": "e15"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "14",
+      "target": "15",
+      "id": "e16"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "15",
+      "target": "16",
+      "id": "e17"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "16",
+      "target": "17",
+      "id": "e18"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "17",
+      "target": "18",
+      "id": "e19"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "17",
+      "target": "19",
+      "id": "e20"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "18",
+      "target": "20",
+      "id": "e21"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "19",
+      "target": "21",
+      "id": "e22"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "20",
+      "target": "22",
+      "id": "e23"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "22",
+      "target": "12",
+      "id": "e24"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "15",
+      "target": "25",
+      "id": "e25"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "25",
+      "target": "23",
+      "id": "e26"
+    },
+    {
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      },
+      "source": "23",
+      "target": "24",
+      "id": "e27"
+    }
+  ]
+}

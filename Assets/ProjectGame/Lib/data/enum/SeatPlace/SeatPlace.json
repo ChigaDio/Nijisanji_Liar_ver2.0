@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "property": "Place_01",
+    "value": 1,
+    "description": ""
+  },
+  {
+    "id": 2,
+    "property": "Place_02",
+    "value": 2,
+    "description": ""
+  },
+  {
+    "id": 3,
+    "property": "Place_03",
+    "value": 3,
+    "description": ""
+  },
+  {
+    "id": 4,
+    "property": "Place_04",
+    "value": 4,
+    "description": ""
+  },
+  {
+    "id": 5,
+    "property": "Place_05",
+    "value": 5,
+    "description": ""
+  },
+  {
+    "id": 6,
+    "property": "Place_06",
+    "value": 6,
+    "description": ""
+  },
+  {
+    "id": 7,
+    "property": "Place_07",
+    "value": 7,
+    "description": ""
+  },
+  {
+    "id": 8,
+    "property": "Place_08",
+    "value": 8,
+    "description": ""
+  },
+  {
+    "id": 9,
+    "property": "Place_09",
+    "value": 9,
+    "description": ""
+  },
+  {
+    "id": 10,
+    "property": "Place_10",
+    "value": 10,
+    "description": ""
+  }
+]

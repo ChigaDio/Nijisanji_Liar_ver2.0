@@ -1,0 +1,354 @@
+{
+  "transitions": [
+    {
+      "id": 1,
+      "fromState": "Loading",
+      "description": "ロード",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 2,
+      "fromState": "Title",
+      "description": "タイトル",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 3,
+      "fromState": "Game",
+      "description": "ゲーム",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 4,
+      "fromState": "Unload",
+      "description": "アンロード",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    },
+    {
+      "id": 5,
+      "fromState": "Exit",
+      "description": "",
+      "variables": [],
+      "lifecycle": {
+        "enter": {
+          "sync": true,
+          "async": false
+        },
+        "update": {
+          "sync": true,
+          "async": false
+        },
+        "exit": {
+          "sync": true,
+          "async": false
+        }
+      }
+    }
+  ],
+  "manager": [],
+  "base": [],
+  "nodes": [
+    {
+      "data": {
+        "description": "ロード",
+        "label": "Loading",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [
+          "2"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": true
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "1",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": -285,
+        "y": 270
+      },
+      "selected": true,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "タイトル",
+        "label": "Title",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [
+          "3"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "2",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 120,
+        "y": 285
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "ゲーム",
+        "label": "Game",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [
+          "4",
+          "2"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "3",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 495,
+        "y": 540
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "アンロード",
+        "label": "Unload",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [
+          "5"
+        ],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "4",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 855,
+        "y": 285
+      },
+      "selected": false,
+      "type": "default"
+    },
+    {
+      "data": {
+        "description": "",
+        "label": "Exit",
+        "stateName": "MainLoop",
+        "subNodes": [],
+        "targets": [],
+        "lifecycle": {
+          "enter": {
+            "sync": true,
+            "async": false
+          },
+          "update": {
+            "sync": true,
+            "async": false
+          },
+          "exit": {
+            "sync": true,
+            "async": false
+          }
+        }
+      },
+      "draggable": true,
+      "dragging": false,
+      "id": "5",
+      "measured": {
+        "height": 133,
+        "width": 150
+      },
+      "position": {
+        "x": 1200,
+        "y": 285
+      },
+      "selected": false,
+      "type": "default"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "1",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e2",
+      "source": "2",
+      "target": "3",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e3",
+      "source": "3",
+      "target": "4",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e4",
+      "source": "4",
+      "target": "5",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    },
+    {
+      "id": "e5",
+      "source": "3",
+      "target": "2",
+      "type": "custom",
+      "animated": true,
+      "style": {
+        "stroke": "#00FF00",
+        "strokeWidth": 3
+      }
+    }
+  ]
+}

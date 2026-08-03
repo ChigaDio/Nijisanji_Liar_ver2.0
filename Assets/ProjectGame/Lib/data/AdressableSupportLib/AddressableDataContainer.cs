@@ -1,0 +1,345 @@
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using UnityEngine;
+using System.Linq;
+namespace AddressableSystem
+{
+    /// <summary>
+    /// Defines categories for addressable assets.
+    /// </summary>
+    public enum AssetCategory
+    {
+        Prefab,
+        Texture,
+        Sprite,
+        Audio,
+        Material,
+        UI,
+        Other
+    }
+
+    /// <summary>
+    /// Defines groups for addressable assets (e.g., game modes or scenes).
+    /// </summary>
+    public enum GroupCategory
+    {
+        Title,
+        Game,
+        Exit,
+        Menu,
+        Other
+    }
+
+    /// <summary>
+    /// Interface for addressable data container.
+    /// </summary>
+    public interface IAddressableDataContainer
+    {
+        int Count { get; }
+        int GetGroupCount(GroupCategory group);
+        int GetCategoryCount(GroupCategory group, AssetCategory category);
+        void Add(GroupCategory group, AssetCategory category, BaseAddressableData data);
+        void Remove(GroupCategory group, AssetCategory category, BaseAddressableData data);
+        BaseAddressableData Find(GroupCategory group, AssetCategory category, int index);
+        BaseAddressableData Find(GroupCategory group, AssetCategory category, string path);
+        BaseAddressableData Find(BaseAddressableData data);
+        void AutoRelease();
+        void ReleaseGroup(GroupCategory group);
+        void ReleaseCategory(GroupCategory group, AssetCategory category);
+        void ReleaseAssetCategory(AssetCategory asset);
+        string GetGroupStats();
+    }
+
+    /// <summary>
+    /// Manages a collection of BaseAddressableData instances, organized by group and category.
+    /// </summary>
+    [System.Serializable]
+    public class AddressableDataContainer : IAddressableDataContainer
+    {
+        private readonly Dictionary<GroupCategory, Dictionary<AssetCategory, List<BaseAddressableData>>> groupDataMap =
+            new Dictionary<GroupCategory, Dictionary<AssetCategory, List<BaseAddressableData>>>();
+
+        public Dictionary<GroupCategory, Dictionary<AssetCategory, List<BaseAddressableData>>> GetAllEntries()
+        {
+            return groupDataMap;
+        }
+
+        public int Count
+        {
+            get
+            {
+                int total = 0;
+                foreach (var group in groupDataMap.Values)
+                {
+                    foreach (var list in group.Values)
+                    {
+                        total += list?.Count ?? 0;
+                    }
+                }
+                return total;
+            }
+        }
+
+        public int GetGroupCount(GroupCategory group)
+        {
+            if (groupDataMap.TryGetValue(group, out var categoryMap))
+            {
+                int total = 0;
+                foreach (var list in categoryMap.Values)
+                {
+                    total += list?.Count ?? 0;
+                }
+                return total;
+            }
+            return 0;
+        }
+
+        public int GetCategoryCount(GroupCategory group, AssetCategory category)
+        {
+            if (groupDataMap.TryGetValue(group, out var categoryMap) &&
+                categoryMap.TryGetValue(category, out var list))
+            {
+                return list?.Count ?? 0;
+            }
+            return 0;
+        }
+
+        public void Add(GroupCategory group, AssetCategory category, BaseAddressableData data)
+        {
+            if (data == null)
+            {
+                Debug.LogWarning("Attempted to add null data to AddressableDataContainer.");
+                return;
+            }
+            if (!Enum.IsDefined(typeof(GroupCategory), group))
+            {
+                Debug.LogError($"Invalid group: {group}");
+                throw new ArgumentException("Invalid GroupCategory.");
+            }
+            if (!Enum.IsDefined(typeof(AssetCategory), category))
+            {
+                Debug.LogError($"Invalid category: {category}");
+                throw new ArgumentException("Invalid AssetCategory.");
+            }
+
+            if (!groupDataMap.TryGetValue(group, out var categoryMap))
+            {
+                categoryMap = new Dictionary<AssetCategory, List<BaseAddressableData>>();
+                groupDataMap[group] = categoryMap;
+            }
+            if (!categoryMap.TryGetValue(category, out var list))
+            {
+                list = new List<BaseAddressableData>();
+                categoryMap[category] = list;
+            }
+            if (Find(group, category, data.path) != null)
+            {
+                data.isCopy = true;
+                return;
+            }
+            list.Add(data);
+        }
+
+        /// <summary>
+        /// Single/SubGroup単位の解放時に、追跡リストから該当エントリのみを取り除く。
+        /// isCopy（他インスタンスへのエイリアス）はそもそもリストに追加されていないため何もしない。
+        /// </summary>
+        public void Remove(GroupCategory group, AssetCategory category, BaseAddressableData data)
+        {
+            if (data == null || data.isCopy) return;
+            if (!groupDataMap.TryGetValue(group, out var categoryMap)) return;
+            if (!categoryMap.TryGetValue(category, out var list) || list == null) return;
+
+            if (!list.Remove(data)) return; // 参照一致で削除。見つからなければ何もしない
+
+            if (list.Count == 0)
+            {
+                categoryMap.Remove(category);
+                if (categoryMap.Count == 0)
+                {
+                    groupDataMap.Remove(group);
+                }
+            }
+        }
+
+        public BaseAddressableData Find(GroupCategory group, AssetCategory category, int index)
+        {
+            if (!Enum.IsDefined(typeof(GroupCategory), group) || !Enum.IsDefined(typeof(AssetCategory), category))
+            {
+                Debug.LogWarning($"Invalid group {group} or category {category} for AddressableDataContainer.Find.");
+                return null;
+            }
+            if (!groupDataMap.TryGetValue(group, out var categoryMap) ||
+                !categoryMap.TryGetValue(category, out var list) || list == null || index < 0 || index >= list.Count)
+            {
+                Debug.LogWarning($"Invalid group {group}, category {category}, or index {index} for AddressableDataContainer.Find.");
+                return null;
+            }
+            return list[index];
+        }
+        public BaseAddressableData Find(GroupCategory group, AssetCategory category, string path)
+        {
+            if (!Enum.IsDefined(typeof(GroupCategory), group) || !Enum.IsDefined(typeof(AssetCategory), category))
+            {
+                Debug.LogWarning($"Invalid group {group} or category {category} for AddressableDataContainer.Find.");
+                return null;
+            }
+            if (!groupDataMap.TryGetValue(group, out var categoryMap) ||
+                !categoryMap.TryGetValue(category, out var list) || list == null)
+            {
+                Debug.LogWarning($"Invalid group {group}, category {category}, or index {path} for AddressableDataContainer.Find.");
+                return null;
+            }
+            return list.Find(data => data.groupCategory == group && data.assetCategory == category && data.path == path);
+        }
+
+        public BaseAddressableData Find(BaseAddressableData data)
+        {
+            if (data == null)
+            {
+                Debug.LogWarning("Attempted to find null data in AddressableDataContainer.");
+                return null;
+            }
+
+            foreach (var categoryMap in groupDataMap.Values)
+            {
+                foreach (var list in categoryMap.Values)
+                {
+                    if (list != null)
+                    {
+                        var found = list.Find(item => item == data);
+                        if (found != null)
+                        {
+                            return found;
+                        }
+                    }
+                }
+            }
+            Debug.LogWarning("Data not found in AddressableDataContainer.");
+            return null;
+        }
+
+        public void AutoRelease()
+        {
+            foreach (var groupKvp in groupDataMap)
+            {
+                var categoryMap = groupKvp.Value;
+                foreach (var categoryKvp in categoryMap)
+                {
+                    var list = categoryKvp.Value;
+                    if (list == null || list.Count == 0) continue;
+
+                    for (int i = list.Count - 1; i >= 0; i--)
+                    {
+                        var data = list[i];
+                        if (data.IsAutoRelease && data.IsLoadedAndSetup && data.GetAddressableObject() == null)
+                        {
+                            data.Release();
+                            list.RemoveAt(i);
+                        }
+                    }
+
+                    if (list.Count == 0)
+                    {
+                        categoryMap.Remove(categoryKvp.Key);
+                    }
+                    else
+                    {
+                        list.TrimExcess();
+                    }
+                }
+
+                if (categoryMap.Count == 0)
+                {
+                    groupDataMap.Remove(groupKvp.Key);
+                }
+            }
+        }
+
+        public void ReleaseGroup(GroupCategory group)
+        {
+            if (!groupDataMap.TryGetValue(group, out var categoryMap) || categoryMap == null)
+            {
+                Debug.LogWarning($"No data found for group {group} in AddressableDataContainer.");
+                return;
+            }
+
+            foreach (var list in categoryMap.Values)
+            {
+                foreach (var data in list)
+                {
+                    data.Release();
+                }
+                list.Clear();
+            }
+            categoryMap.Clear();
+            groupDataMap.Remove(group);
+        }
+
+        public void ReleaseAssetCategory(AssetCategory asset)
+        {
+            var emptyGroups = new List<GroupCategory>();
+            foreach (var groupKvp in groupDataMap)
+            {
+                var categoryMap = groupKvp.Value;
+                if (!categoryMap.TryGetValue(asset, out var list) || list == null) continue;
+
+                foreach (var data in list)
+                {
+                    data.Release();
+                }
+                list.Clear();
+                categoryMap.Remove(asset);
+
+                if (categoryMap.Count == 0)
+                {
+                    emptyGroups.Add(groupKvp.Key);
+                }
+            }
+
+            foreach (var group in emptyGroups)
+            {
+                groupDataMap.Remove(group);
+            }
+        }
+
+        public void ReleaseCategory(GroupCategory group, AssetCategory category)
+        {
+            if (!groupDataMap.TryGetValue(group, out var categoryMap) ||
+                !categoryMap.TryGetValue(category, out var list) || list == null)
+            {
+                Debug.LogWarning($"No data found for group {group}, category {category} in AddressableDataContainer.");
+                return;
+            }
+
+            foreach (var data in list)
+            {
+                data.Release();
+            }
+            list.Clear();
+            categoryMap.Remove(category);
+            if (categoryMap.Count == 0)
+            {
+                groupDataMap.Remove(group);
+            }
+        }
+
+        public string GetGroupStats()
+        {
+            var stats = new StringBuilder("AddressableDataContainer Stats:");
+            foreach (var groupKvp in groupDataMap)
+            {
+                stats.AppendLine($"Group: {groupKvp.Key}, Total Count: {GetGroupCount(groupKvp.Key)}");
+                foreach (var categoryKvp in groupKvp.Value)
+                {
+                    stats.AppendLine($"  Category: {categoryKvp.Key}, Count: {categoryKvp.Value?.Count ?? 0}, Loaded: {categoryKvp.Value?.Count(d => d.IsLoadedAndSetup) ?? 0}");
+                }
+            }
+            return stats.ToString();
+        }
+    }
+}
+    

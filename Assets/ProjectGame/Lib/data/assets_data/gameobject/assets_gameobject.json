@@ -1,0 +1,53 @@
+{
+    "groups": {
+        "Character": {
+            "items": [
+                {
+                    "name": "Ange",
+                    "desc": "アンジュ",
+                    "path": "Assets/ProjectGame/MyAssets/Prefab/Character/Ange.prefab",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Prefab\\Character\\Ange.prefab",
+                    "subgroup": "Prefab"
+                },
+                {
+                    "name": "Ryushen",
+                    "desc": "緑仙",
+                    "path": "Assets/ProjectGame/MyAssets/Prefab/Character/Ryushen.prefab",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Prefab\\Character\\Ryushen.prefab",
+                    "subgroup": "Prefab"
+                },
+                {
+                    "name": "Belmond",
+                    "desc": "ベルモンド",
+                    "path": "Assets/ProjectGame/MyAssets/Prefab/Character/Belmond.prefab",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Prefab\\Character\\Belmond.prefab",
+                    "subgroup": "Prefab"
+                },
+                {
+                    "name": "Himawari",
+                    "desc": "本間ひわまり",
+                    "path": "Assets/ProjectGame/MyAssets/Prefab/Character/Himawari.prefab",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Prefab\\Character\\Himawari.prefab",
+                    "subgroup": "Prefab"
+                },
+                {
+                    "name": "Mashiro",
+                    "desc": "ましろ",
+                    "path": "Assets/ProjectGame/MyAssets/Prefab/Character/Mashiro.prefab",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Prefab\\Character\\Mashiro.prefab",
+                    "subgroup": "Prefab"
+                },
+                {
+                    "name": "Kuzuha",
+                    "desc": "葛葉",
+                    "path": "Assets/ProjectGame/MyAssets/Prefab/Character/Kuzuha.prefab",
+                    "absolute_path": "D:\\DoujinGameUnity\\Nijisanji_Liar_Ver2.0\\Assets\\ProjectGame\\MyAssets\\Prefab\\Character\\Kuzuha.prefab",
+                    "subgroup": "Prefab"
+                }
+            ],
+            "subgroups": [
+                "Prefab"
+            ]
+        }
+    }
+}

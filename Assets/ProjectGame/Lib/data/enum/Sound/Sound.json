@@ -1,0 +1,20 @@
+[
+    {
+        "description": "移動音",
+        "id": 1,
+        "property": "UI_SelectMove",
+        "value": 1
+    },
+    {
+        "description": "決定音",
+        "id": 2,
+        "property": "UI_PushEnter",
+        "value": 2
+    },
+    {
+        "description": "タイトルのBGM",
+        "id": 3,
+        "property": "Title_Main_BGM",
+        "value": 3
+    }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "float",
+    "name": "charisma",
+    "description": "カリスマ",
+    "arraySize": 0
+  },
+  {
+    "id": 2,
+    "type": "float",
+    "name": "intuition",
+    "description": "直感",
+    "arraySize": 0
+  },
+  {
+    "id": 3,
+    "type": "float",
+    "name": "reasoning",
+    "description": "ロジック",
+    "arraySize": 0
+  },
+  {
+    "id": 4,
+    "type": "float",
+    "name": "appeal",
+    "description": "可愛さ",
+    "arraySize": 0
+  },
+  {
+    "id": 5,
+    "type": "float",
+    "name": "deception",
+    "description": "演技力",
+    "arraySize": 0
+  },
+  {
+    "id": 6,
+    "type": "float",
+    "name": "stealth",
+    "description": "ステルス",
+    "arraySize": 0
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "arraySize": 0,
+    "description": "ゲストID(Noneならプレイヤー)",
+    "id": 1,
+    "name": "guest_character_id",
+    "options": {},
+    "type": "GuestCharacter"
+  },
+  {
+    "arraySize": 0,
+    "description": "キャラステータス",
+    "id": 2,
+    "name": "character_stats",
+    "options": {},
+    "type": "CharacterStats"
+  },
+  {
+    "id": 3,
+    "type": "RoleType",
+    "name": "role_type",
+    "description": "役職ID",
+    "arraySize": 0,
+    "options": {}
+  }
+]
